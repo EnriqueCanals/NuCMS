@@ -5,10 +5,10 @@ begin
   Jeweler::Tasks.new do |s|
     s.name = "nucms"
     s.summary = %Q{TODO}
-    s.email = "jcapote@gmail.com"
-    s.homepage = "http://github.com/jcapote/nucms"
+    s.email = "enriquecanals@gmail.com"
+    s.homepage = "http://github.com/ecanals/nucms"
     s.description = "A lightweight, content management system built out of various rack middleware"
-    s.authors = ["jcapote"]
+    s.authors = ["jcapote, ecanals, acanals"]
   end
 rescue LoadError
   puts "Jeweler not available. Install it with: sudo gem install technicalpickles-jeweler -s http://gems.github.com"
