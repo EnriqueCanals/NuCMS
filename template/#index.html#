@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<div id="title">
+<title>Nuklei.com - Home</title>
+</div>
+<link href="/css/styles.css" type="text/css" rel="stylesheet" />
+<link href="/css/quickbox.css" type="text/css" rel="stylesheet" />
+<meta name="keywords" content="nuklei, web sites, websites, grow your business, web development, miami, 305-704-3756, business software, ecommerce, shopping cart, custom software, rails, ruby, web applications, web apps" />
+<meta name="description" content="Nuklei.com is an Web Design and Web Application development firm based out of Miami, Florida. Using the latest tools and best practices, we focus on helping you make your grow through technology. 305-704-3756"/>
+</head>
+<body>
+<div id="wrapper">
+div id="header">
+    <a href="/" title="Home"><img src="/images/logo.png" border="0" alt="Nuklei\
+.com" /></a><a class="lang" rel="nofollow" href="/switch-lang/es">en Espa&ntild\
+e;ol</a>
+    <h1>Nuklei.com</h1>
+    <ul>
+      <li><a href="/" title="Home">Home</a></li>
+      <li><a href="/about" title="About">About</a></li>
+      <li><a href="/services" title="Services">Services</a></li>
+      <li><a href="/portfolio" title="Portfolio">Portfolio</a></li>
+-uuu(D  <div id="header">
+    <a href="/" title="Home"><img src="/images/logo.png" border="0" alt="Nuklei.com" /></a><a class="lang" rel="nofollow" href="/switch-lang/es">en Espa&ntilde;ol</a>
+    <h1>Nuklei.com</h1>
+    <ul>
+      <li><a href="/" title="Home">Home</a></li>
+      <li><a href="/about" title="About">About</a></li>
+      <li><a href="/services" title="Services">Services</a></li>
+      <li><a href="/portfolio" title="Portfolio">Portfolio</a></li>
+      <li><a href="/case-studies" title="Case Studies">Case Studies</a></li>
+      <li class="last"><a href="/contact" title="Contact">Contact Us</a></li>
+    </ul>
+
+  </div>
+  <div class="clear"></div>
+  <div id="main">
+    <div id="masthead" class="en">
+      <h2>We Build Websites & Applications That Grow Your Business</h2>
+      <p>Using the latest tools and best practices, we focus on helping you make your business grow through technology.</p>
+      <a href="/services" title="Learn More"><img src="/images/mast-button.gif" border="0" alt="Learn How We Can Help" /></a>
+    </div>
+    <div id="container">
+      <div id="content">
+</div>
+      <div id="sidebar">
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div id="footer">
+    <div class="fl">&copy; 2009 &middot; ALL RIGHTS RESERVED &middot; NUKLEI.COM</div>
+    <div class="fr"><a href="/legal" title="Legal Info">LEGAL INFO</a></div>
+  </div>
+  <div class="clear"></div>
+</div>
+<script type="text/javascript" src="/js/moo.js"></script>
+<script type="text/javascript" src="/js/moo-more.js"></script>
+<script type="text/javascript" src="/js/QuickBox.js"></script>
+
+
+<script type="text/javascript">
+new QuickBox();
+</script>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-297284-3");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

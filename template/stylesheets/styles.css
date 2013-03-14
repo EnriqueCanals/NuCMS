@@ -1,0 +1,393 @@
+
+*, html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url(/images/bg.jpg) repeat-x #2f1a09;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #444444;
+}
+
+.clear {
+    clear: both;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+div.caption {
+    position: relative;
+    right: 85px;
+    margin-top: 20px;
+    width: 270px;
+}
+
+
+div.caption p {
+    text-align: left;
+    font-size: 14px;
+    line-height: 20px;
+    font-style:italic;
+}
+
+div.caption a {
+    text-align: left;
+    font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+ul, li {
+    list-style: none;
+}
+
+
+#wrapper {
+    width: 960px;
+    padding: 0 15px;
+    margin: 0 auto;
+    background: url(/images/bg-wrap.jpg) no-repeat top center;
+}
+
+#header {
+    width: 960px;
+    height: 102px;
+
+}
+
+#header a.lang {
+   position:relative;
+   padding: 10px;
+   top: 25px;
+   color: white;
+}
+
+#header img {
+    padding-top:25px;
+    float: left;
+}
+
+
+#header h1, .obscura {
+    overflow: hidden;
+    width: 0;
+    height: 0;
+}
+
+
+#header ul {
+    float: right;
+    height: 33px;
+    list-style: none;
+    background: url(/images/nav-bg.gif) repeat-x;
+    margin-top: 59px;
+}
+
+#header li {
+    float: left;
+    font-size: 12px;
+    padding: 10px 0px 10px 0px;
+    background: url(/images/nav-divider.gif) top right no-repeat;
+}
+
+#header li a {
+    padding: 12px 20px 10px;
+    color: #2f1a09;
+    text-decoration: none;
+}
+
+#header li a:hover {
+    background-color: #fff;
+    position:relative;	
+}
+
+#header li a.active {
+    padding: 12px 20px 10px;
+    background-color: #fff;
+    position:relative;
+}
+
+
+#header li.last {
+    background: none;
+}
+
+#main {
+    width: 930px;
+    padding: 15px;
+    background: #FFFFFF;
+}
+
+#main #masthead.en{
+    width: 890px;
+    height: 224px;
+    padding: 45px 20px 0 20px;
+    background: url(/images/masthead-home-en.jpg);
+    margin-bottom: 15px;
+}
+
+#main #masthead.es {
+    width: 890px;
+    height: 224px;
+    padding: 45px 20px 0 20px;
+    background: url(/images/masthead-home-es.jpg);
+    margin-bottom: 15px;
+}
+
+#main #masthead h2 {
+    font-size: 24px;
+    color: #FFFFFF;
+    width:0;
+    height:0;
+    overflow:hidden;
+}
+
+#main #masthead p {
+    font-size: 20px;
+    font-style: italic;
+  
+  color:#d0d49d;
+    line-height: 24px;
+    width: 525px;
+    margin: 60px 0 15px 0;
+}
+
+#main #container {
+    background: url(/images/sidebar-bg.gif) repeat-y right;
+}
+
+#main #content {
+    float: left;
+    width: 602px;
+    padding-left: 3px;
+}
+
+#content h1 {
+    font-size: 320%;
+}
+
+#content h2 {
+    font-size: 175%;
+}
+
+#main #content h3 {
+    font-size: 150%;
+}
+
+#main #content p {
+    line-height: 20px;
+    padding: 0 25px 15px 0;
+}
+
+#main #content hr {
+    border: none;
+    height: 1px;
+    background: #ddded1;
+    color: #ddded1;
+    margin-bottom: 25px;
+}
+
+#main #content img {
+    padding: 20px 15px 15px;
+}
+#main #content h4 {
+    color: #2d4b32;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+#main #content ul {
+    width: 275px;
+}
+
+#main #content li {
+    padding: 8px 0 8px 24px;
+    background: url(/images/bullet.gif) left no-repeat;
+}
+
+#main #sidebar {
+    float: right;
+    width: 265px;
+    padding: 15px;
+}
+
+#main #sidebar .feed {
+    padding: 2px 8px 0 0;
+}
+
+#main #sidebar iframe {
+    padding:0;
+    position: relative;
+    right: 5px;
+}
+
+#main #sidebar h4 {
+    color: #2d4b32;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+#main #sidebar p {
+    margin-bottom: 20px;
+    line-height: 20px;
+    text-align:left;
+    width: 218px;
+}
+
+#main #sidebar p a {
+    text-decoration: underline;
+}
+
+#main #sidebar p a:hover {
+    text-decoration: underline;
+}
+
+#main #sidebar span {
+    color: #168c27;
+    font-style: italic;
+}
+
+img {
+    border: 0;
+}
+
+blockquote { font-style: italic; quotes: "\201C" "\201D"; } blockquote:before { content: open-quote; font-weight: bold; } blockquote:after { content: close-quote; font-weight: bold; }
+#main #sidebar p a.link {
+    color: #78451e;
+    text-decoration: none;
+    border-bottom: dotted 1px #e08f50;
+    font-style: italic;
+    padding-bottom: 3px;
+
+}
+
+#main #sidebar div.quote {
+    background-color: #ddd;
+    border: 1px solid #bbb;
+    line-height: 130%;
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 130%;
+
+}
+#main #sidebar div.integration {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    line-height: 130%;
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 130%;
+    width: 85%;
+    margin: 0 auto;
+}
+
+#main #sidebar div.integration img {
+    display:block;
+    text-align:center;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+
+
+
+#footer {
+    color: #64472f;
+    font-size: 10px;
+    margin: 15px 3px;
+    padding-bottom: 15px;
+}
+
+#footer a {
+    color: #875b38;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
+
+
+input {
+    font-size:18px;
+}
+
+
+#main #content ol li {
+    background:none;
+    background-image:none;
+}
+
+form.cmxform fieldset {
+  margin-bottom: 10px;
+}
+form.cmxform legend {
+  padding: 0 2px;
+  font-weight: bold;
+}
+form.cmxform label {
+  font-size:13px;
+  display: inline-block;
+  line-height: 1.8;
+  vertical-align: top;
+}
+form.cmxform fieldset ol {
+  margin: 0;
+  padding: 0;
+}
+form.cmxform fieldset li {
+  list-style: none;
+  padding: 5px;
+  margin: 0;
+}
+form.cmxform fieldset fieldset {
+  border: none;
+  margin: 3px 0 0;
+}
+form.cmxform fieldset fieldset legend {
+  padding: 0 0 5px;
+  font-weight: normal;
+}
+form.cmxform fieldset fieldset label {
+  display: block;
+  width: auto;
+}
+form.cmxform em {
+  font-weight: bold;
+  font-style: normal;
+  color: #f00;
+}
+form.cmxform label {
+  width: 320px; /* Width of labels */
+}
+form.cmxform fieldset fieldset label {
+  margin-left: 123px; /* Width plus 3 (html space) */
+}
+
+.link {
+    padding-top: 5px;
+    padding-right: 16px;
+    
+}
+
+#twitter_update_list li{
+    padding: 8px;
+}
+
+
+#main #sidebar span{
+    color: #000;
+}
+    

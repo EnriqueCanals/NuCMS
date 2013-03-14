@@ -1,0 +1,739 @@
+@charset "UTF-8";
+/* News Item
+---------------------------------------- */
+/*
+<div class="blog-item">
+	<h6 class="date">14 de Julio 2010</h6>
+	<h3><a href="#">Lorem My Ipsum</a></h3>
+	<img src="image.jpg" width="194" height="146" alt="Blog Thumb"/>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec ipsum magna. Duis porttitor, felis quis eleifend vehicula, mauris mi varius nibh, sit amet iaculis magna magna vitae justo...</p>
+	<p class="read-more"><a href="#">Nota Completa</a></p>
+</div>
+*/
+/* Pagination Styling
+---------------------------------------- */
+/*
+<div class="pagination">
+  <span class="previous_page disabled">← Previous</span>
+  <em>1</em>
+  <a rel="next" href="/?page=2">2</a>
+  <a href="/?page=3">3</a>
+  <a href="/?page=4">4</a>
+  <a class="next_page" rel="next" href="/?page=2">Next →</a>
+</div>
+
+*/
+/*
+  Survey Styling
+  
+  Code:
+  <form action="#" id="encuesta" class="widget" accept-charset="utf-8">
+		<h3>Encuesta</h3>
+		<div><strong>¿Te gusta el nuevo sitio?</strong></div>
+		<div><input name="opt1" id="opt1" type="radio"> Si me gusta</div>
+		<div><input name="opt2" id="opt2" type="radio"> No me gusta</div>
+		<div><input name="opt3" id="opt3" type="radio"> Me da igual</div>
+		<div><a href="#" class="button">Votar</a></div>
+	</form>
+*/
+/*
+  Facebook-ike asearch box.
+  
+  Code:
+  <div class="search-box">
+    <div class="shadow">
+      <span class="input">
+        <input name="q" onblur="if(this.value==&quot;&quot;)this.value=&quot;Buscar&quot;;" onfocus="if(this.value==&quot;Buscar&quot;) this.value=&quot;&quot;;" size="15" type="text" value="Buscar" />
+      </span>
+      <span class="button"><input name="sa" type="submit" value="" /></span>
+    </div>
+  </div>
+*/
+/*
+  @TODO: Add docs to button!
+  <div class="button"><label><input value="Post" type="submit"></label></div>
+
+  @param $color the color of the button.
+  @param $background-color the color of the background; this is used to calculate the shadow.
+  @param $padding the size of the button with padding.
+*/
+/*
+   Replace an A tag with an a background-image.
+   @var $image string path to the image
+   @var $inline boolean embed via data.
+ */
+/*
+  Replace an A tag with an a background-image sprite. You need to provide it with
+  the dimentions of the image and the x-pos/y-pos
+  
+  @var $image string path to the image
+  @var $height width
+  @var $height pixels
+  @var $x-pos pixels
+  @var $y-pos pixels
+  @var $inline boolean embed via data.
+*/
+/*
+  Replace a Header>a tag with a background image. Made specifically for logos.
+  @var $image string path to the image
+  @var $inline boolean embed via data.
+*/
+/*
+  Mixin for quickly replacing images for any given element.
+  @var $image string path to the image
+  @var $inline boolean embed via data.
+*/
+/*
+  Just adds the image as a background and sets the width/height accordingly.
+  @var $image string path to the image
+  @var $inline boolean embed via data.
+*/
+/*
+  Add a background by passing the exact same parameters as a normal one. With
+  one more parameter $inline. Which will use inline-image and add backward 
+  compatibility to IE7 via *background.
+  
+  @var $color
+  @var $image string can be a path to an image or inherit (will insert tags separately)
+  @var $horizontal
+  @var $vertical
+  @var $repeat
+  @var $inline
+*/
+/*
+  An area which should be clickable. It's meant to be a low level mixin, you should
+  use the alternatuves.
+  - debugging enables a background color to know the position.
+*/
+/*
+  This should be invoked on the H1-6 Tag and not in the link, the needed structure is:
+    <h1><a href=""></a></h1>
+*/
+/*
+  Common styles needed by our Image Mixins.
+*/
+.ext-hide-text, footer .logo a, header .logo a, header .impact .work-it {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  display: block;
+  outline: none; }
+
+/*
+  @TODO: Add docs to float-list!
+*/
+/*
+  $height        : 32px;
+  $color         : #FFF;
+  $hover-color   : #6B6B6B;
+  $text-shadow   : #530008;
+  $bg            : #A11212;
+  $bg-hover      : #FFF;
+  $border-light  : none;
+  $border-shadow : none;
+  $padding       : 0 15px;
+  $margin        : 0 3px;
+  $border-radius : 4px 4px 0 0;
+  $font-weight   : bold;
+  @include horizontal-navigation($height, $color, $hover-color, $text-shadow, $bg, $bg-hover, $border-light, $border-shadow, $padding, $margin, $border-radius, $font-weight);
+*/
+/*
+  @TODO: Add docs to bg-effects!
+*/
+/*
+  Low level mixin.
+  Invoked by other mixins.
+  
+  @var $left the left border.
+  @var $right the right border
+*/
+/*
+  Shortcut to remove margin an padding.
+  Used o several @mixins.
+ */
+.no-mp, footer .logo, header .logo, header .steps ul {
+  margin: 0;
+  padding: 0; }
+
+/*
+  @TODO: Add docs to no-mp!
+*/
+/*
+  Centers a container by using the blueprint container size.
+*/
+/*
+  @TODO: Add docs to inline-block!
+*/
+/*
+  Calculate margin and line height according to the given size.
+*/
+/*
+  Calculate the Header sizes in a magical orgasmic way fucker.
+*/
+/*
+  Crossbrowser linear gradient.
+  Compatible Browsers: FF3.6+ Saf4+ Chrome IE6-IE9
+*/
+/* Boilerplate
+---------------------------------------- */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+body {
+  font-size: 13px;
+  font-family: sans-serif;
+  line-height: 1.231;
+  *font-size: small; }
+
+select, input, textarea, button {
+  font: 99% sans-serif; }
+
+pre, code, kbd, samp {
+  font-family: monospace, sans-serif; }
+
+html {
+  overflow-y: scroll; }
+
+ul, ol {
+  margin-left: 1.8em; }
+
+ol {
+  list-style-type: decimal; }
+
+td, td img {
+  vertical-align: top; }
+
+sub {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  bottom: -0.25em; }
+
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  top: -0.5em; }
+
+textarea {
+  overflow: auto; }
+
+a:hover, a:active {
+  outline: none; }
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: pre-line;
+  word-wrap: break-word;
+  padding: 15px; }
+
+input[type="radio"] {
+  vertical-align: text-bottom; }
+
+input[type="checkbox"] {
+  vertical-align: bottom; }
+
+.ie7 input[type="checkbox"] {
+  vertical-align: baseline; }
+
+.ie6 input {
+  vertical-align: text-bottom; }
+
+label, input[type="button"], input[type="submit"], input[type="image"], button {
+  cursor: pointer; }
+
+button, input, select, textarea {
+  margin: 0; }
+
+::-moz-selection {
+  background: #aa5658;
+  color: white;
+  text-shadow: none; }
+
+::selection {
+  background: #aa5658;
+  color: white;
+  text-shadow: none; }
+
+a:link {
+  -webkit-tap-highlight-color: #aa5658; }
+
+button {
+  width: auto;
+  overflow: visible; }
+
+.ie7 img {
+  -ms-interpolation-mode: bicubic; }
+
+.ie6 legend, .ie7 legend {
+  margin-left: -7px; }
+
+nav ul, nav li {
+  margin: 0;
+  list-style: none;
+  list-style-image: none; }
+
+.ir {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  direction: ltr;
+  background-repeat: no-repeat; }
+
+.hidden {
+  display: none;
+  visibility: hidden; }
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+  .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto; }
+
+.clearfix {
+  *zoom: 1; }
+  .clearfix:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden; }
+
+/* Global Classes for extension.
+---------------------------------------- */
+.w {
+  width: 1000px;
+  margin: 0 auto;
+  width: 960px; }
+
+/* General styles
+---------------------------------------- */
+html, body {
+  min-width: 1000px; }
+
+body {
+  margin: 0;
+  font: normal normal normal 13px/20px Helvetica, Arial, sans-serif; }
+  body h1 {
+    font-size: 215%;
+    line-height: 27.9px;
+    margin-bottom: 9.3px; }
+  body h2 {
+    font-size: 191%;
+    line-height: 24.8px;
+    margin-bottom: 8.267px; }
+  body h3 {
+    font-size: 167%;
+    line-height: 21.7px;
+    margin-bottom: 7.233px; }
+  body h4 {
+    font-size: 144%;
+    line-height: 18.6px;
+    margin-bottom: 6.2px; }
+  body h5 {
+    font-size: 120%;
+    line-height: 15.5px;
+    margin-bottom: 5.167px; }
+  body h6 {
+    font-size: 96%;
+    line-height: 12.4px;
+    margin-bottom: 4.133px; }
+
+/* Fonts
+---------------------------------------- */
+@font-face {
+  font-family: 'Aller';
+  src: url("fonts/aller.eot?") format("eot"), url("fonts/aller.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Bebas';
+  src: url("fonts/BebasNeue-webfont.eot");
+  src: url("fonts/BebasNeue-webfont.eot?iefix") format("eot"), url("fonts/BebasNeue-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+/* General Styles. */
+p, ol, ul {
+  margin: 12px 0; }
+
+a {
+  text-decoration: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #C81717; }
+
+blockquote {
+  background: #F2F2F2;
+  padding: 10px 15px 10px 50px;
+  border: 1px solid #DBDBDB;
+  margin: 23px 0; }
+  blockquote p {
+    margin: 0; }
+
+b, strong, th {
+  font-weight: bold; }
+
+i, em {
+  font-style: italic; }
+
+small {
+  font-size: 85%; }
+
+input, textarea {
+  outline: none; }
+
+input:invalid, textarea:invalid {
+  -moz-border-radius: 1px;
+  -webkit-border-radius: 1px;
+  -o-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -khtml-border-radius: 1px;
+  border-radius: 1px;
+  -moz-box-shadow: red 0 0 5px 0;
+  -webkit-box-shadow: red 0 0 5px 0;
+  -o-box-shadow: red 0 0 5px 0;
+  box-shadow: red 0 0 5px 0; }
+
+.no-boxshadow input:invalid,
+.no-boxshadow textarea:invalid {
+  background-color: #f0dddd; }
+
+/* The partials.
+---------------------------------------- */
+@import url(partials/toolbar.css);
+html, body {
+  height: 100%; }
+
+#container {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -330px; }
+  #container #footer-spacing {
+    height: 330px; }
+
+footer {
+  clear: both;
+  position: relative;
+  height: 330px; }
+
+footer {
+  color: #fff;
+  background: transparent url('../images/bg-footer.jpg?1299866499') left top repeat-x; }
+  footer div#inner {
+    padding-top: 40px; }
+    footer div#inner div#map {
+      float: left;
+      margin: 0 25px 0 0;
+      border: 10px solid #393830; }
+  footer .logo {
+    top: 10px; }
+    footer .logo a {
+      background: transparent url('../images/logo.png?1299866499') no-repeat top left;
+      width: 256px;
+      height: 55px;
+      cursor: pointer; }
+  footer div#info-wrapper {
+    float: right;
+    margin: 16px 105px 0 0; }
+    footer div#info-wrapper ul#address {
+      list-style: none;
+      font-family: 'Aller';
+      font-size: 18px;
+      text-shadow: 1px 1px 1px #000; }
+
+/* Main Design Header
+---------------------------------------- */
+.ext-header, header, header .bar {
+  background: transparent url('../images/bg-header.jpg?1299866499') left top repeat-x; }
+
+.ext-shadow, header nav ul li a, header .impact p, header .impact h2 span, header .steps ul li strong {
+  text-shadow: #2b2a27 2px 1px 1px; }
+
+header {
+  color: #fff; }
+  header .w {
+    height: 425px;
+    width: 960px;
+    /*    height:81px;*/
+    position: relative; }
+  header .logo {
+    position: absolute;
+    top: 10px; }
+    header .logo a {
+      background: transparent url('../images/logo.png?1299866499') no-repeat top left;
+      width: 256px;
+      height: 55px;
+      cursor: pointer; }
+  header .bar {
+    background-position: 0 -428px;
+    text-indent: -9999px;
+    height: 12px; }
+  header nav {
+    width: 675px;
+    height: 24px;
+    position: absolute;
+    top: 31px;
+    right: 10px; }
+    header nav ul {
+      text-align: right; }
+      header nav ul li {
+        margin: 0 20px;
+        display: inline; }
+        header nav ul li a {
+          padding: 6px;
+          color: #e1d6be;
+          font-family: 'Aller';
+          font-size: 24px; }
+          header nav ul li a:visited {
+            color: #e1d6be; }
+          header nav ul li a:hover {
+            color: white; }
+          header nav ul li a:active {
+            color: white; }
+  header .impact {
+    width: 380px;
+    height: 300px;
+    position: absolute;
+    top: 89px;
+    left: 15px; }
+    header .impact p {
+      font-size: 16px;
+      font-family: Arial;
+      line-height: 26px; }
+    header .impact .work-it {
+      background: transparent url('../images/work.png?1299866499') no-repeat top left;
+      width: 287px;
+      height: 54px;
+      cursor: pointer; }
+    header .impact h2 {
+      font-size: 47px;
+      font-family: Aller;
+      font-weight: normal;
+      color: #FEFD94;
+      line-height: 51px; }
+      header .impact h2 span {
+        display: block; }
+        header .impact h2 span.s2 {
+          color: #C1CC4E; }
+        header .impact h2 span.s3 {
+          color: #C2AE53; }
+  header .steps {
+    width: 583px;
+    height: 300px;
+    position: absolute;
+    top: 103px;
+    right: 0px; }
+    header .steps ul {
+      list-style: none; }
+      header .steps ul li {
+        float: left;
+        text-align: center;
+        margin: 0 9px; }
+        header .steps ul li.last {
+          margin-right: 0; }
+        header .steps ul li img {
+          display: block;
+          border: 10px solid #363533;
+          margin-bottom: 31px; }
+        header .steps ul li strong {
+          color: #F4F4F4;
+          font-size: 28px;
+          font-family: 'Bebas';
+          font-weight: normal; }
+
+/* Contents
+---------------------------------------- */
+body {
+  background: transparent url('../images/bg-content.jpg?1299866499') left top repeat; }
+
+#main {
+  min-height: 400px;
+  background: transparent url('../images/bg-content-gradient.jpg?1299866499') center top no-repeat; }
+  #main .w {
+    height: 900px; }
+    #main .w div#inner {
+      padding-top: 5%; }
+      #main .w div#inner div#col {
+        float: left;
+        width: 443px;
+        margin-right: 33px; }
+        #main .w div#inner div#col h1.label {
+          font-family: 'Bebas';
+          font-size: 34px;
+          font-weight: normal;
+          float: left;
+          color: #302c29;
+          margin-right: 10px; }
+        #main .w div#inner div#col h1 {
+          font-family: 'Bebas';
+          font-size: 24px;
+          font-weight: normal;
+          float: left;
+          color: #302c29;
+          margin-right: 10px; }
+        #main .w div#inner div#col div#floaty-bar {
+          background: url('../images/floaty_bg.jpg?1299976379') repeat-x;
+          opacity: 0.7;
+          text-indent: -9999px;
+          width: 64%;
+          float: right;
+          margin-top: 10px;
+          margin-bottom: 0px; }
+        #main .w div#inner div#col p {
+          clear: right;
+          margin-top: 48px;
+          text-align: justify;
+          color: #342A20; }
+        #main .w div#inner div#col div#col-item {
+          float: right;
+          text-align: justify;
+          width: 450px; }
+          #main .w div#inner div#col div#col-item div#square-image {
+            float: left;
+            margin: 10px;
+            height: 75px;
+            width: 75px;
+            border: 5px solid #2f292b;
+            background: #fffce9; }
+          #main .w div#inner div#col div#col-item h1#item-header {
+            margin-top: 12px;
+            font-family: 'Aller';
+            font-size: 20px;
+            text-shadow: none; }
+          #main .w div#inner div#col div#col-item p {
+            margin-top: 50px;
+            line-height: 16px;
+            color: #342A20; }
+      #main .w div#inner div#col-wide {
+        padding-top: 20px;
+        width: 97%;
+        clear: left; }
+        #main .w div#inner div#col-wide h1 {
+          font-family: 'Bebas';
+          font-size: 34px;
+          font-weight: normal;
+          float: left;
+          color: #302c29;
+          margin-right: 10px; }
+        #main .w div#inner div#col-wide div#floaty-bar {
+          background: url('../images/floaty_bg.jpg?1299976379') repeat-x;
+          opacity: 0.7;
+          text-indent: -9999px;
+          width: 77%;
+          float: right;
+          margin-top: 10px; }
+        #main .w div#inner div#col-wide div#col {
+          float: left;
+          width: 443px;
+          clear: both; }
+        #main .w div#inner div#col-wide div#col-images {
+          float: left;
+          margin: 50px 0 0 35px; }
+          #main .w div#inner div#col-wide div#col-images div#square-image-large {
+            height: 115px;
+            width: 115px;
+            border: 4px solid #98917f;
+            float: left;
+            margin-right: 14px;
+            margin-bottom: 14px;
+            background-color: #fffce9; }
+        #main .w div#inner div#col-wide div#col-images-bottom {
+          float: left;
+          margin: 50px 0 40px 45px; }
+          #main .w div#inner div#col-wide div#col-images-bottom div#square-image-large {
+            height: 115px;
+            width: 115px;
+            border: 4px solid #98917f;
+            float: left;
+            margin-right: 14px;
+            margin-bottom: 14px;
+            background-color: #fffce9; }
+
+.widget {
+  padding: 20px; }
+
+/*
+  Here you'll find all css which it's focused at a specific browser.
+  (IE7,IE8,IE9)
+*/
+.ie7 hr {
+  margin: -6px 0 !important;
+  color: #DBDBDB;
+  border: 0;
+  height: 1px; }

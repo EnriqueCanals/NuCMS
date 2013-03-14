@@ -1,0 +1,84 @@
+<title>Portfolio</title>
+<div id="masthead"></div>
+<div id="content">
+<script type="text/javascript" src="/js/moo-more.js"></script>
+<script type="text/javascript" src="/js/QuickBox.js"></script>
+  <h1>Portfolio</h1>
+
+<hr>
+  <h2>Wet Republic</h2>
+  <div class="fl">
+    <a href="/images/wetrep_large.jpg" rel="quickbox">
+      <img src="/images/wetrep_small.jpg" alt="Wet Republic" />
+    </a>
+  </div>
+  <div class="caption fr">
+    <p>Ultra Pool at the MGM Grand</p>
+    <a href="http://www.wetrepublic.com">View Site</a>
+  </div>
+
+
+
+  <hr class="clear">
+
+  <h2>Zoning Consultants</h2>
+  <div class="fl">
+    <a href="/images/zoning_large.jpg" rel="quickbox">
+      <img src="/images/zoning_small.jpg" alt="Zoning Consultants" />
+    </a>
+  </div>
+  <div class="caption fr">
+    <p>Zoning Consultants of South Florida provide a wide range of zoning expertise in south florida</p>
+    <a href="http://www.zoningconsultants.com">View Site</a>
+  </div>
+  
+
+
+<hr class="clear">
+
+  <h2>Censorship & Exile Research Association</h2>
+  <div class="fl">
+    <a href="/images/portfolio-cera.png" rel="quickbox">
+      <img src="/images/cera-screen.png" alt="CERA" />
+    </a>
+  </div>
+  <div class="caption fr">
+    <p>The Censorship and Exile Research Association was established with a main focus on Cuban exile studies and censorship.</p>
+    <a target=":blank" href="http://www.censorshipandexile.com">View Site</a>
+  </div>
+
+
+  <hr class="clear">
+  <h2>Kane & co.{cpaflorida.com}</h2>
+  <div class="fl">
+    <a href="/images/cpa_large.jpg" rel="quickbox">
+      <img src="/images/cpa_small.jpg" alt="Kane & Co. C.P.A." />
+    </a>
+  </div>
+  <div class="caption fr">
+    <p>Kane & Company, A Certified Public Accounting Firm located in miami's financial district</p>
+    <a target=":blank" href="http://www.cpaflorida.com">View Site</a>
+  </div>
+
+
+
+<script type="text/javascript">
+new QuickBox();
+</script>
+
+
+</div>
+  
+<div id="sidebar">
+  <h2>Like what you see?</h2>
+
+  <br/>
+  <div class="quote">
+    <p>Give us a call, see what we can do for you. <b>305-704-3756</b></p>
+  </div>
+</div>
+
+
+
+
+

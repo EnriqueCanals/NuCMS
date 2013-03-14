@@ -1,0 +1,97 @@
+﻿
+
+/*////////////////////////////
+//                          //
+//        QuickBox          //
+//                          //
+////////////////////////////*/
+
+
+#qbOverlay
+{
+display: none;
+position: absolute;
+z-index: 100;
+left: 0;
+top: 0;
+background-color: #000;
+cursor: pointer;
+}
+
+#qbBox
+{
+display: none;
+position: absolute;
+left: 50%;
+z-index: 101;
+background-color: #fff;
+}
+
+#qbStage
+{
+position: relative;
+z-index: 103;
+height: 100%;
+}
+
+#qbBottom
+{
+position: relative;
+z-index: 102;
+background-color: #fff;
+height: 45px;
+padding: 0 10px;
+margin-bottom: -45px;
+}
+
+#qbClose
+{
+display: block;
+float: right;
+width: 66px;
+height: 22px;
+background: transparent url("/images/close.gif") no-repeat center;
+cursor: pointer;
+}
+
+
+#qbPrev, #qbNext
+{
+position: absolute;
+z-index: 104;
+width: 50%;
+height: 100%;
+outline: none;
+display: block;
+}
+
+#qbNext
+{
+left: 50%;
+}
+
+
+#qbPrev:hover	{ background: transparent url("/images/prev.gif") no-repeat 0% 15%;   }
+#qbNext:hover	{ background: transparent url("/images/next.gif") no-repeat 100% 15%; }
+
+
+
+#qbBox .loading
+{
+background: #fff url("/images/loading.gif") no-repeat center;
+}
+
+#qbCaption
+{
+color: #666;
+font-size: 0.8em;
+font-weight: bold;
+}
+
+#qbCounter
+{
+font-family: "Trebuchet MS";
+color: #aaa;
+font-size: 0.8em;
+font-weight: bold;
+}
